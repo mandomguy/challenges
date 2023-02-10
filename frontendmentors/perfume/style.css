@@ -20,7 +20,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* !-------------------------------------------------------------- */
 
 .container{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -45,8 +45,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .product{
         width: 100% !important;
-        height: auto;
-        padding: 30px;
+        height: 700px !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center !important;
+        top: 150px;
     }
 
 
@@ -55,6 +59,47 @@ p, h1, h2, h3, h4, h5, h6 {
         width: 100% !important;
         height: 300px !important;
     }
+
+    .title{
+        font-size: 35px !important;
+        line-height: 35px !important;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .description{
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+
+    .normal-price{
+        font-size: 30px !important;
+    }
+
+    .discount-muted{
+        font-size: 16px !important;
+        bottom: 5px !important;
+    }
+
+    .btn{
+        position: relative;
+        top: 60px !important;
+        height: 50px !important;
+        width: 100% !important;
+    }
+
+    .price{
+        position: relative;
+        top: 40px !important;
+    }
+
+    .perfume{
+        font-size: 14px !important;
+        letter-spacing: 5px !important;
+        position: absolute;
+        top: 170px !important;
+    }
+
 }
     
 
@@ -132,7 +177,7 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     color: #fff;
     height: 50px;
-    width: 95%;
+    width: 100%;
     border: none;
     cursor: pointer;
 }
