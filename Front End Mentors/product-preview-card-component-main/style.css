@@ -37,18 +37,25 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     .card{
         width: 375px;
-        height: 600px;
+        height: auto;
     }
 
-    .image{
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
+    .product{
+        width: 100% !important;
+        height: auto;
+        padding: 30px;
     }
-} */
+
+
+    .image{
+        background-image: url(./images/image-product-mobile.jpg) !important;
+        width: 100% !important;
+        height: 300px !important;
+    }
+}
     
 
 /* !-------------------------------------------------------------- */
@@ -56,7 +63,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .image{
     position: absolute;
-    display: flex;
     width: 50%;
     height: 600px;
     background-image: url(./images/image-product-desktop.jpg);
@@ -68,9 +74,10 @@ p, h1, h2, h3, h4, h5, h6 {
     left: 50%;
     width: 50%;
     padding: 30px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: space-between;
+    height: auto;
 }
 
 /* !-------------------------------------------------------------- */
